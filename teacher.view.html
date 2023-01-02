@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="res/css/calendar.css">
   <link rel="stylesheet" href="res/css/all.css">
 </head>
 
@@ -16,14 +16,34 @@
   </header>
   <nav class="navbar">
       <a class="tablinks active" onclick="openCity(event, 'inicio')"><i class="fa fa-fw fa-home"></i> Home</a>
-      <a class="tablinks" onclick="openCity(event, 'buscar')"><i class="fa fa-fw fa-search"></i> Search</a>
+      <a class="tablinks" onclick="openCity(event, 'buscar')"><i class="fa fa-fw fa-search"></i> Buscar Cursos</a>
       <a class="tablinks" onclick="openCity(event, 'calendar')"><i class="fa-solid fa-calendar-days"></i> Calendario</a>
       <a class="tablinks" onclick="openCity(event, 'User')"><i class="fa-solid fa-circle-user"></i> Me</a>
   </nav>
   <div id="inicio" class="tabcontent">
-    <h1>Estadisticas</h1>
+    <h1>Mis Cursos</h1>
+    <ul class="ul">
+      <li><a onclick="opencourse(event, 'course1')" class="course-link tablinks">Curso1</a></li>
+      <li><a onclick="opencourse(event, 'course2')" class="course-link tablinks">Curso2</a></li>
+      <li><a onclick="opencourse(event, 'course3')" class="course-link tablinks">Curso3</a></li>
+      <li><a onclick="opencourse(event, 'course4')" class="course-link tablinks">Curso4</a></li>
+    </ul>
   </div>
-  
+  <!-- Pestañas-->
+  <div class="tabcontent" id="course1">
+    <h2 class="course-name">Curso1</h2>
+    
+  </div>
+  <div class="tabcontent" id="course2">
+    <span>asd</span>
+  </div>
+  <div class="tabcontent" id="course3">
+    <span>asd</span>
+  </div>
+  <div class="tabcontent" id="course4">
+    <span>asd</span>
+  </div>
+  <!--Otras pestañas-->
   <div id="buscar" class="tabcontent">
     <h3>Paris</h3>
     <p>Paris is the capital of France.</p>
@@ -31,29 +51,20 @@
   
   <div id="calendar" class="tabcontent">
     <h3>Tokyo</h3>
-    <p>Tokyo is the capital of Japan.</p>
+    <div id="calendar-contenedor">
+
+    </div>
   </div>
   <div id="User" class="tabcontent">
     <h3>Me</h3>
-    <div class="timeline">
-      <div class="container left">
-        <div class="content">
-          <h2>2017</h2>
-          <p>Lorem ipsum..</p>
-        </div>
-      </div>
-      <div class="container right">
-        <div class="content">
-          <h2>2016</h2>
-          <p>Lorem ipsum..</p>
-        </div>
-      </div>
+
     </div>
   </div>
   <main>
     
 
   </main>
+  <script src="res/js/calendar.js"></script>
   <script>
     function openCity(evt, cityName) {
       // Declare all variables
@@ -73,6 +84,28 @@
 
       // Show the current tab, and add an "active" class to the link that opened the tab
       document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+
+    //cursos
+    function opencourse(evt, coursename) {
+      // Declare all variables
+      var i, tabcontent, tablinks;
+
+      // Get all elements with class="tabcontent" and hide them
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+
+      // Get all elements with class="tablinks" and remove the class "active"
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+
+      // Show the current tab, and add an "active" class to the link that opened the tab
+      document.getElementById(coursename).style.display = "block";
       evt.currentTarget.className += " active";
     }
   </script>
