@@ -1,0 +1,69 @@
+.custom-shape-divider-top-1672767673 {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+.custom-shape-divider-top-1672767673 svg {
+    position: relative;
+    display: block;
+    width: calc(146% + 1.3px);
+    height: 225px;
+}
+
+.custom-shape-divider-top-1672767673 .shape-fill {
+    fill: #FFBF69;
+}
+/*resto de mi css*/
+nav{
+    position: sticky;
+    top: 0;
+    background-color: white;
+    border-bottom: solid black 1px;
+    margin-bottom: 0;
+}
+.small-title{
+    font-size: 18px;
+    font-weight: 700;
+}
+.right{
+    text-align: right;
+}
+header p{
+    text-align: center;
+}
+header{
+    position: relative;
+}
+.background{
+    background-color: #FFBF69;
+    height: 450px;
+}
+.title{
+    text-align: center;
+    font-size: 4rem;
+}
+.start{
+    text-decoration: none;
+    color: black;
+    background-color: #FF9F1C;
+    border: solid black 2px;
+    font-size: 2rem;
+    border-radius: 10px;
+}
+.start:hover{
+    color: greenyellow;
+    background-color: black;
+    border: solid greenyellow 2px;
+}
+
+.important{
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+footer{
+    background-color: #2EC4B6;
+}

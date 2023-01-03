@@ -1,114 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta name="keywords" content="PlaniProfe, planiprofe, planilla para profes,">
+    <meta name="description" content="PlaniProfe es un herramienta hecha para los profesores a facilitarles un monton de cosas">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="res/css/all.css">
-    <style>
-        body {
-            background-color: white;
-            position: relative;
-        }
-
-        .custom-shape-divider-bottom-1672693109 {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            overflow: hidden;
-            line-height: 0;
-            transform: rotate(180deg);
-        }
-
-        .custom-shape-divider-bottom-1672693109 svg {
-            position: relative;
-            display: block;
-            width: calc(225% + 1.3px);
-            height: 299px;
-        }
-
-        .custom-shape-divider-bottom-1672693109 .shape-fill {
-            fill: #FFBF69;
-        }
-
-        .background {
-            margin-top: 450px;
-            background-color: #FFBF69;
-            position: relative;
-        }
-
-        .background p {
-            margin-left: 7rem;
-        }
-
-        .title {
-            font-size: 5.5rem;
-            text-align: center;
-        }
-
-        .start {
-            font-size: 2rem;
-            border: solid #2EC4B6 1px;
-            background-color: #2EC4B6;
-            border-radius: 10px;
-        }
-
-        .start:hover {
-            border: solid #2EC4B6 1px;
-            text-decoration: none;
-            color: #FF9F1C;
-        }
-
-        header p {
-            text-align: center;
-        }
-
-        .what {
-            font-size: 25px;
-            font-weight: bold;
-        }
-    </style>
+    <link rel="stylesheet" href="../res/css/all.css">
+    <link rel="stylesheet" href="../res/css/index.css">
 </head>
 
 <body>
     <nav>
-        <h4>PlaniProfe</h4>
+        <span class="small-title">PlaniProfe</span>
+        <div class="right">
+            <a href="">iniciar secion</a>
+            <a href="#contacto">Contacto</a>
+            <a href="#info">informacion</a>
+        </div>
     </nav>
     <header>
-        <h1 class="title">PlaniProfe</h1>
-        <p>
-            <a href="registro.html" class="start">Registrarme</a>
-            <a href="inicio-secion.html" class="start">Iniciar secion</a>
-        </p>
+        <div class="background">
+            <h1 class="title">PlaniProfe</h1>
+            <p>
+                <a href="" class="start">iniciar sesion</a>
+                <a href="" class="start">Registrarme</a>
+            </p>
+        </div>
     </header>
-    <main>
-        <div class="custom-shape-divider-bottom-1672693109">
+    <div class="wave">
+        <div class="custom-shape-divider-top-1672767673">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
                 preserveAspectRatio="none">
                 <path
                     d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
                     class="shape-fill"></path>
             </svg>
-            <br>
-            <br>
         </div>
-        <div class="background">
+    </div>
+    <main>
+        <article id="info">
+            <h2>¿Qué es PlaniProfe?</h2>
             <p>
-                <span class="what">¿Qué es?</span><br>
                 PlaniProfe es una aplicacion web que le da a los profesores la facilidad para los cierres de notas,
                 notas conceptuales, etc. A traves de las siguientes herramientas que ofrese PlaniProfe:
-                <ul>
-                    <li>Asistencias </li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
             </p>
-        </div>
+            <ul>
+                <li>Asistencias </li>
+                <li>Trabajos realizados</li>
+                <li>Notas de evaluaciones</li>
+                <li>calculadora de promedios</li>
+            </ul>
+            <p>
+                asi mismo de esa misma manera PlaniProfe tambien permite a los alumnos saber como van en sus clases Pero
+                <span class="important">NO MODIFICAR SUS NOTAS</span>
+            </p>
+        </article>
     </main>
+    <footer>
+        <div class="row">
+            <div class="col">
+                <h3>Sobre Nosotros</h3>
+            </div>
+            <div class="col">
+                <h3>Links Utiles</h3>
+                <ul>
+                    <li><a href="">Inicio</a></li>
+                    <li><a href="">Registro</a></li>
+                    <li><a href="">Iniciar secion</a></li>
+            </div>
+            <div class="col" id="contacto">
+                <h3>Formas de contacto:</h3>
+                <ul class="ul">
+                    <li><a href="mailto:contacto@planiprofe.com.ar" target="_blank">Envianos un E-mail</a></li>
+                    <li><a href="" target="_blank">Nuestro Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
