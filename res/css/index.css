@@ -64,6 +64,31 @@ header{
     font-size: 1.5rem;
     font-weight: 800;
 }
+.col{
+    text-align:center;
+}
+.pricing{
+    margin:0px auto;
+    max-width: 300px;
+    height: 300px;
+    text-align: justify;
+    background-color: #CBF3F0;
+border:solid black 1px;
+border-radius: 10px;
+margin-bottom: 10rem;
+}
+.pricing:hover{
+    background-color: #FFBF69;
+    border: solid #FF9F1C 1px;
+}
+.pricing h2{
+    font-size: 1.5rem;
+    font-weight: 750;
+}
+.pricing-footer{
+    margin-top: 5.6rem;
+    background-color: #fff;
+}
 footer{
     background-color: #2EC4B6;
 }

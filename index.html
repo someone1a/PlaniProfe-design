@@ -4,10 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="keywords" content="PlaniProfe, planiprofe, planilla para profes,">
-    <meta name="description" content="PlaniProfe es un herramienta hecha para los profesores a facilitarles un monton de cosas">
+    <meta name="description"
+        content="PlaniProfe es un herramienta hecha para los profesores a facilitarles un monton de cosas">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="../res/css/all.css">
     <link rel="stylesheet" href="../res/css/index.css">
 </head>
@@ -19,6 +22,7 @@
             <a href="">iniciar secion</a>
             <a href="#contacto">Contacto</a>
             <a href="#info">informacion</a>
+            <a href="#price">Precios</a>
         </div>
     </nav>
     <header>
@@ -41,7 +45,7 @@
         </div>
     </div>
     <main>
-        <article id="info">
+        <article id="info" class="container">
             <h2>¿Qué es PlaniProfe?</h2>
             <p>
                 PlaniProfe es una aplicacion web que le da a los profesores la facilidad para los cierres de notas,
@@ -58,15 +62,51 @@
                 <span class="important">NO MODIFICAR SUS NOTAS</span>
             </p>
         </article>
+        <section class="container-fluid">
+            <h2 style="text-align: center;">Precios</h2>
+            <div class="row">
+                <div class="col">
+                    <article class="pricing" id="price">
+                        <h2>Gratis</h2>
+                        <ul class="ul">
+                            <li>Anuncios</li>
+                            <li>Clases ilimitadas</li>
+                        </ul>
+                        <div class="pricing-footer">
+                            <span class="price">GRATIS</span>
+                        </div>
+                    </article>
+                </div>
+                <div class="col">
+                    <article class="pricing">
+                        <h2>Pro</h2>
+                        <ul class="ul">
+                            <li>Sin Anuncios</li>
+                            <li>Acceso prioritaro a la aplicacion movil (Cuando la misma se de a conocer)</li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <div class="pricing-footer">
+                            <span class="price">$500ars por mes</span><br>
+                            <span class="price">$4500ars por mes</span><br>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer>
+    <footer class="container-fluid">
         <div class="row">
             <div class="col">
                 <h3>Sobre Nosotros</h3>
+                <p>
+                    Soy Walter un chico de 15 años que al tener un hermano profesor se le ocurrio armar esta planilla
+                    para profesores ya que la misma le facilita un par de cosas
+                </p>
             </div>
             <div class="col">
                 <h3>Links Utiles</h3>
-                <ul>
+                <ul class="ul">
                     <li><a href="">Inicio</a></li>
                     <li><a href="">Registro</a></li>
                     <li><a href="">Iniciar secion</a></li>
